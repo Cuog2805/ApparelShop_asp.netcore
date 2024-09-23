@@ -1,0 +1,12 @@
+﻿using System.ComponentModel.DataAnnotations;
+
+namespace ApparelShop.Models.Properties
+{
+    public class Type
+    {
+        public int TypeID { get; set; }
+        public string Name { get; set; }
+        public virtual ICollection<Product> Products { get; set; }
+        public virtual UserObject UserObject { get; set; }
+    }
+}
